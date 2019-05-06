@@ -1,0 +1,25 @@
+@import (optional) 'index/fonts';
+@import (optional) 'index/grid';
+@import (optional) 'index/reset';
+
+html {
+	font-size: .6px;
+	
+	@media @sm {
+		font-size: .7px;
+	}
+	@media @md {
+		font-size: .8px;
+	}
+	@media @lg {
+		font-size: .9px;
+	}
+	@media @xl {
+		font-size: 1px;
+	}
+}
+
+body {
+	font-size: 16rem;
+	line-height: 1.25;
+}

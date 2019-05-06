@@ -1,0 +1,144 @@
+@xl: ~'(min-width: 1200px)';
+@lg: ~'(min-width: 992px)';
+@md: ~'(min-width: 768px)';
+@sm: ~'(min-width: 576px)';
+
+@media @sm {
+	// min-width: 576px
+}
+@media @md {
+	// min-width: 768px
+}
+@media @lg {
+	// min-width: 992px
+}
+@media @xl {
+	// min-width: 1200px
+}
+
+.container {
+	--cw: none;
+	
+	@media @sm {
+		--cw: 540px;
+	}
+	@media @md {
+		--cw: 720px;
+	}
+	@media @lg {
+		--cw: 960px;
+	}
+	@media @xl {
+		--cw: 1140px;
+	}
+}
+
+.unset {
+	all: unset;
+	display: block;
+	box-sizing: border-box;
+}
+
+.dn {
+	display: none !important;
+}
+
+.c {
+	display: flex;
+	flex-direction: column;
+}
+
+.r {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+* {
+	.unset;
+	
+	&::before,
+	&::after {
+		.unset;
+	}
+}
+
+strong,
+b,
+i,
+em,
+span {
+	display: inline;
+}
+
+head,
+style,
+script {
+	display: none;
+}
+
+html {
+	height: 100%;
+	font-size: 1px;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+	-webkit-text-fill-color: currentColor; // safari: text color fix
+	
+	& > footer {
+		margin-top: auto;
+	}
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+a[href],
+button,
+[type='button'],
+label {
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+table {
+	display: table;
+	
+	caption {
+		display: table-caption;
+	}
+	
+	thead {
+		display: table-header-group;
+	}
+	
+	tbody {
+		display: table-row-group;
+	}
+	
+	tfoot {
+		display: table-footer-group;
+	}
+	
+	tr {
+		display: table-row;
+	}
+	
+	colgroup {
+		display: table-table-column-group;
+	}
+	
+	col {
+		display: table-column;
+	}
+	
+	td,
+	th {
+		display: table-cell;
+	}
+}
