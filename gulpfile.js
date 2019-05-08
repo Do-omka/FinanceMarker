@@ -4,7 +4,7 @@ const
 	gulp = require('gulp'),
 	sourcemaps = require('gulp-sourcemaps'),
 	postcss = require('gulp-postcss'),
-	less = require('gulp-less'),
+	scss = require('gulp-sass'),
 	imgmin = require('gulp-imagemin'),
 	htmlmin = require('gulp-htmlmin'),
 	jsmin = require('gulp-uglify'),
@@ -19,7 +19,7 @@ const
 		plugins: [
 			// {removeViewBox: false},
 			// {removeDimensions: true},
-			{cleanupIDs: true},
+			// {cleanupIDs: true},
 		],
 	}
 
@@ -42,13 +42,15 @@ function min_html() {
 }
 
 function css() {
-	return gulp.src('src/less/*.less')
+	// scss.compiler = require('sass')
+	
+	return gulp.src('src/scss/*.scss')
 		.pipe(sourcemaps.init({
 			loadMaps: true,
 			largeFile: true,
 		}))
 		.pipe(sourcemaps.identityMap())
-		.pipe(less())
+		.pipe(scss({outputStyle: 'expanded'}))
 		.pipe(postcss([
 			require('postcss-font-magician'),
 			require('postcss-inline-svg')({
@@ -61,7 +63,7 @@ function css() {
 			}),
 			require('postcss-mq-last'),
 		],
-		// {syntax: require('postcss-less')},
+		// {syntax: require('postcss-scss')},
 		))
 		.pipe(sourcemaps.write())
 		.pipe(gulp.dest('dev/css'))
@@ -72,7 +74,7 @@ function min_css() {
 		.pipe(postcss([
 			require('autoprefixer'),
 			require('postcss-csso')({
-				restructure: false,
+				// restructure: false,
 				debug: true,
 				comments: false,
 			}),
@@ -126,7 +128,7 @@ function watch_html() {
 }
 
 function watch_css() {
-	return gulp.watch('src/less', css)
+	return gulp.watch('src/scss', css)
 }
 
 function watch_js() {

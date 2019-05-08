@@ -1,36 +1,29 @@
-@xl: ~'(min-width: 1200px)';
-@lg: ~'(min-width: 992px)';
-@md: ~'(min-width: 768px)';
-@sm: ~'(min-width: 576px)';
-
-@media @sm {
-	// min-width: 576px
-}
-@media @md {
-	// min-width: 768px
-}
-@media @lg {
-	// min-width: 992px
-}
-@media @xl {
-	// min-width: 1200px
-}
+$xl: 'min-width: 1200px';
+$lg: 'min-width: 992px';
+$md: 'min-width: 768px';
+$sm: 'min-width: 576px';
 
 .container {
 	--cw: none;
 	
-	@media @sm {
+	@media ($sm) {
 		--cw: 540px;
 	}
-	@media @md {
+	@media ($md) {
 		--cw: 720px;
 	}
-	@media @lg {
+	@media ($lg) {
 		--cw: 960px;
 	}
-	@media @xl {
+	@media ($xl) {
 		--cw: 1140px;
 	}
+}
+
+.initial {
+	all: initial;
+	display: block;
+	box-sizing: border-box;
 }
 
 .unset {
@@ -54,11 +47,11 @@
 }
 
 * {
-	.unset;
+	@extend .unset;
 	
 	&::before,
 	&::after {
-		.unset;
+		@extend .unset;
 	}
 }
 

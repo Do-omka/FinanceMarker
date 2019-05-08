@@ -1,8 +1,8 @@
 .btn {
-	.unset;
+	@extend .initial;
 	width: 100%;
 	max-width: 350rem;
-	.c;
+	@extend .c;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
@@ -18,7 +18,6 @@
 		background-color: rgb(4, 130, 214);
 	}
 }
-
 
 h1 {
 	color: rgb(10, 31, 68);
@@ -70,7 +69,7 @@ h5 {
 	font-family: 'Avenir Next Cyr';
 	font-size: 17rem;
 	font-weight: 400;
-	letter-spacing: -.24rem;
+	letter-spacing: -0.24rem;
 	line-height: 24rem;
 }
 
