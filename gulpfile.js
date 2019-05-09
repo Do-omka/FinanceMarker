@@ -4,7 +4,7 @@ const
 	gulp = require('gulp'),
 	sourcemaps = require('gulp-sourcemaps'),
 	postcss = require('gulp-postcss'),
-	scss = require('gulp-sass'),
+	sass = require('gulp-dart-sass'),
 	imgmin = require('gulp-imagemin'),
 	htmlmin = require('gulp-htmlmin'),
 	jsmin = require('gulp-uglify'),
@@ -42,17 +42,21 @@ function min_html() {
 }
 
 function css() {
-	// scss.compiler = require('sass')
-	
+	// sass.compiler = require('sass')
+	// let fibers = require("fibers")
+		
 	return gulp.src('src/scss/*.scss')
 		.pipe(sourcemaps.init({
 			loadMaps: true,
 			largeFile: true,
 		}))
 		.pipe(sourcemaps.identityMap())
-		.pipe(scss({outputStyle: 'expanded'}))
+		.pipe(sass({
+			outputStyle: 'expanded',
+			// fiber: fibers,
+		}))
 		.pipe(postcss([
-			require('postcss-font-magician'),
+			// require('postcss-font-magician'),
 			require('postcss-inline-svg')({
 				path: 'dev/img',
 			}),
