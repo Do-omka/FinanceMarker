@@ -3,6 +3,11 @@ $lg: 'min-width: 992px';
 $md: 'min-width: 768px';
 $sm: 'min-width: 576px';
 
+& {
+	height: 100%;
+	font-size: 1px;
+}
+
 .container {
 	--cw: none;
 	
@@ -67,11 +72,6 @@ head,
 style,
 script {
 	display: none;
-}
-
-html {
-	height: 100%;
-	font-size: 1px;
 }
 
 body {

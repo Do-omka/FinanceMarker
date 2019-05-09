@@ -1,4 +1,4 @@
-html.fm_ {
+.fm_ {
 	@import 'index/index';
 	
 	font-size: .6px;
@@ -24,15 +24,10 @@ html.fm_ {
 	}
 	
 	body {
-		font-size: 16rem;
-		line-height: 1.25;
+		@extend .t1;
 		
 		background: svg-load('../img/bg-bg.svg') no-repeat;
 		background-size: 100% auto;
-	}
-	
-	p {
-		@extend .t1;
 	}
 	
 	body > header {
