@@ -19,7 +19,7 @@ const
 		plugins: [
 			// {removeViewBox: false},
 			// {removeDimensions: true},
-			{cleanupIDs: true},
+			// {cleanupIDs: true},
 		],
 	}
 
@@ -50,7 +50,7 @@ function css() {
 		.pipe(sourcemaps.identityMap())
 		.pipe(less())
 		.pipe(postcss([
-			require('postcss-font-magician'),
+			// require('postcss-font-magician'),
 			require('postcss-inline-svg')({
 				path: 'dev/img',
 			}),
@@ -72,7 +72,7 @@ function min_css() {
 		.pipe(postcss([
 			require('autoprefixer'),
 			require('postcss-csso')({
-				restructure: false,
+				// restructure: false,
 				debug: true,
 				comments: false,
 			}),

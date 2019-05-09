@@ -27,25 +27,20 @@ html {
 	line-height: 65rem;
 }
 
-body {
+body:extend(.c) {
 	font-size: 16rem;
 	line-height: 1.25;
-	
 	background: svg-load('../img/bg-bg.svg') no-repeat;
 	background-size: 100% auto;
 }
 
-p {
-	.t1;
-}
+p:extend(.t1) {}
 
-body > header {
-	.t2;
+body > header:extend(.t2) {
 	padding-top: 32rem;
 	padding-bottom: 32rem;
 	
-	.content {
-		.r;
+	.content:extend(.r) {
 		justify-content: space-between;
 		margin: 0 -20rem;
 		
