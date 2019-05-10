@@ -2,9 +2,9 @@ $text-color: rgb(10, 31, 68);
 
 .btn {
 	@extend .initial;
+	@extend .c;
 	width: 100%;
 	max-width: 350rem;
-	@extend .c;
 	justify-content: center;
 	align-items: center;
 	text-align: center;

@@ -1,19 +1,21 @@
 .fm_ {
 	@import 'index/index';
 	
-	font-size: .6px;
-	
-	@media ($sm) {
-		font-size: .7px;
-	}
-	@media ($md) {
-		font-size: .8px;
-	}
-	@media ($lg) {
-		font-size: .9px;
-	}
-	@media ($xl) {
-		font-size: 1px;
+	& {
+		font-size: .6px;
+		
+		@media ($sm) {
+			font-size: .7px;
+		}
+		@media ($md) {
+			font-size: .8px;
+		}
+		@media ($lg) {
+			font-size: .9px;
+		}
+		@media ($xl) {
+			font-size: 1px;
+		}
 	}
 	
 	.logo {
@@ -102,13 +104,13 @@
 					margin-bottom: 8rem;
 					
 					&.anal {
-						 background-image: svg-load('../img/anal-bg.svg');
+						background-image: svg-load('../img/anal-bg.svg');
 					}
 					&.exp {
-						 background-image: svg-load('../img/exp-bg.svg');
+						background-image: svg-load('../img/exp-bg.svg');
 					}
 					&.edu {
-						 background-image: svg-load('../img/edu-bg.svg');
+						background-image: svg-load('../img/edu-bg.svg');
 					}
 				}
 			}
