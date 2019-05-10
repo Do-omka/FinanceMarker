@@ -1,3 +1,5 @@
+$text-color: rgb(10, 31, 68);
+
 .btn {
 	@extend .initial;
 	width: 100%;
@@ -20,7 +22,6 @@
 }
 
 h1 {
-	color: rgb(10, 31, 68);
 	font-family: 'Avenir Next Cyr';
 	font-size: 35rem;
 	font-weight: 700;
@@ -28,14 +29,12 @@ h1 {
 }
 
 h2 {
-	color: rgb(10, 31, 68);
 	font-family: 'Avenir Next Cyr';
 	font-size: 31rem;
 	font-weight: 700;
 }
 
 h3 {
-	color: rgb(10, 31, 68);
 	font-family: 'Avenir Next Cyr';
 	font-size: 28rem;
 	font-weight: 700;
@@ -43,7 +42,6 @@ h3 {
 }
 
 h4 {
-	color: rgb(2, 32, 71);
 	font-family: 'Avenir Next Cyr';
 	font-size: 21rem;
 	font-weight: 700;
@@ -51,7 +49,6 @@ h4 {
 }
 
 h5 {
-	color: rgb(2, 32, 71);
 	font-family: 'Avenir Next Cyr';
 	font-size: 17rem;
 	font-weight: 700;
@@ -60,7 +57,6 @@ h5 {
 }
 
 .t1 {
-	color: rgb(2, 32, 71);
 	font-family: 'Avenir Next Cyr';
 	font-size: 21rem;
 	font-weight: 400;
@@ -75,7 +71,6 @@ h5 {
 }
 
 .t3 {
-	color: rgb(2, 32, 71);
 	font-family: 'Avenir Next Cyr';
 	font-size: 14rem;
 	font-weight: 400;

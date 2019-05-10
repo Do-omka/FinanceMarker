@@ -25,7 +25,7 @@
 	
 	body {
 		@extend .t1;
-		
+		color: $text-color;
 		background: svg-load('../img/bg-bg.svg') no-repeat;
 		background-size: 100% auto;
 	}
