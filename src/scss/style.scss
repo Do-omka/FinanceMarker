@@ -66,6 +66,76 @@
 		}
 	}
 	
+	body > footer {
+		@extend .t3;
+		padding-top: 32rem;
+		// padding-bottom: 32rem;
+		$mb: 32rem;
+		color: white;
+		font-size: 14rem;
+		background-color: rgb(22, 155, 244);
+		
+		h2 {
+			font-size: 16rem;
+			line-height: 20rem;
+			margin-bottom: 5rem;
+		}
+		
+		.main {
+			margin-bottom: 32rem;
+			
+			&-content {
+				margin: 0 -10rem -15rem;
+				
+				> * {
+					flex-shrink: 1;
+					padding: 0 10rem;
+					margin-bottom: 15rem;
+				}
+				
+				.logo .img {
+					max-width: 255rem;
+				}
+				
+				.socials {
+					@extend .r;
+					justify-content: flex-end;
+					margin-left: -5px;
+					margin-right: -5px;
+					
+					li {
+						margin-left: 5px;
+						margin-right: 5px;
+						width: 20px;
+						height: 20px;
+					}
+				}
+			}
+		}
+		
+		nav > * {
+			margin-bottom: $mb;
+		}
+		
+		.subscribe {
+			display: flex;
+			margin: 0 -5px 32rem;
+			
+			input {
+				flex: 1 1 66%;
+				color: white;
+				background-color: rgb(0, 120, 211);
+				margin: 0 5px $mb;
+			}
+			
+			.btn {
+				flex: 1 1 33%;
+				padding: 10rem 17rem;
+				margin: 0 5px $mb;
+			}
+		}
+	}
+	
 	.index-top {
 		
 		.content {
