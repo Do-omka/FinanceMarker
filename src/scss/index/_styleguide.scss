@@ -222,10 +222,11 @@ form:hover {
 		
 		.remember {
 			display: flex;
+			align-items: center;
 			
 			.checkbox {
-				width: 20rem;
-				height: 20rem;
+				width: 20px;
+				height: 20px;
 				border-radius: 4rem;
 				background:  rgb(22, 155, 244) no-repeat center;
 				margin-right: 10px;
@@ -233,6 +234,7 @@ form:hover {
 			
 			input:checked + .checkbox {
 				background-image: svg-load('../img/checked-bg.svg');
+				background-size: 13px 10px;
 			}
 		}
 		
