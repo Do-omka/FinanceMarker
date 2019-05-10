@@ -1,5 +1,15 @@
 $text-color: rgb(10, 31, 68);
 
+.link {
+	text-decoration: underline;
+}
+
+.hover {
+	&:hover {
+		box-shadow: 0 8rem 24rem rgba(0, 0, 0, 0.1), 0 0 2rem rgba(0, 0, 0, 0.06);
+	}
+}
+
 .btn {
 	@extend .initial;
 	@extend .c;
@@ -36,6 +46,7 @@ h1 {
 	font-size: 35rem;
 	font-weight: 700;
 	line-height: 50rem;
+	margin-bottom: 6rem;
 }
 
 h2 {
@@ -88,30 +99,150 @@ h5 {
 	line-height: 20rem;
 }
 
-input {
-	max-width: none;
+.input {
 	width: 100%;
-	width: auto;
 	min-width: 0;
 	@extend .t2;
 	padding: 8rem 15rem;
 	color: $text-color;
 	border-radius: 6rem;
-	border: 1rem solid rgb(255, 255, 255);
+	border: 1rem solid rgb(224, 224, 224);
 	background-color: rgb(255, 255, 255);
 	
 	&::placeholder {
-		color: currentColor;
+		// color: currentColor;
+		@extend .unset;
 	}
+}
+
+// form:hover,
+form:focus-within,
+form:focus,
+form:hover {
+	// :not(.input:focus) {
+	// 	~ .input:invalid {
+	// 		border-color: rgb(252, 76, 108);
+	// 	}
 	
-	&:invalid {
-		border-color: rgb(252, 76, 108);
-		
+	.input {
+		&:valid {
+			border-color: rgb(39, 174, 96);
+		}
+		&:invalid {
+			border-color: rgb(252, 76, 108);
+		}
 		&:hover {
 			border-color: rgb(22, 155, 244);
+			
+			~ :invalid {
+				border-color: rgb(224, 224, 224);
+			}
+		}
+		&:focus {
+			~ :invalid:hover {
+				border-color: rgb(22, 155, 244);
+			}
 		}
 	}
-	&:valid {
-		border-color: rgb(39, 174, 96);
+}
+
+.login_with {
+	@extend .c;
+	margin-bottom: 15px;
+	
+	.options {
+		display: flex;
+		margin: 0 -7.5px;
+	}
+	
+	.option {
+		@extend .initial;
+		display: flex;
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		padding: 15rem;
+		font-family: 'Avenir Next Cyr';
+		font-size: 16rem;
+		font-weight: 700;
+		box-shadow: 0 2rem 6rem rgba(176, 186, 197, 0.6);
+		border-radius: 6rem;
+		margin: 32rem 7.5px 15px;
+		
+		@extend .hover;
+		
+		&::before {
+			content: '';
+			width: 25rem;
+			height: 25rem;
+			flex-shrink: 0;
+			margin-right: 10px;
+			
+			background-size: 100% 100%;
+		}
+		
+		&.g {
+			color: rgb(102, 117, 135);
+			background-color: white;
+			
+			&::before {
+				background-image: url('../img/g-bg.png');
+			}
+		}
+		&.fb {
+			color: white;
+			background-color: rgb(60, 89, 152);
+			
+			&::before {
+				background-image: svg-load('../img/fb-bg.svg');
+			}
+		}
+	}
+	
+	.or {
+		align-self: center;
+	}
+}
+
+.form {
+	@extend .c;
+	
+	.input {
+		margin-bottom: 10px;
+	}
+	
+	.details {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		text-align: center;
+		@extend .t3;
+		margin-bottom: 20rem;
+		
+		.remember {
+			display: flex;
+			
+			.checkbox {
+				width: 20rem;
+				height: 20rem;
+				border-radius: 4rem;
+				background:  rgb(22, 155, 244) no-repeat center;
+				margin-right: 10px;
+			}
+			
+			input:checked + .checkbox {
+				background-image: svg-load('../img/checked-bg.svg');
+			}
+		}
+		
+		.forgot {
+			color: rgb(22, 155, 244);
+		}
+	}
+	
+	.btn {
+		align-self: center;
+		font-size: 18rem;
 	}
 }
