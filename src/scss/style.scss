@@ -199,4 +199,22 @@
 			}
 		}
 	}
+	
+	main.login {
+		.features {
+			h4 {
+				display: flex;
+				align-items: center;
+				
+				&::before {
+					content: '';
+					width: 34rem;
+					height: 34rem;
+					background: no-repeat center center;
+					margin-right: 15px;
+				}
+			}
+		}
+	}
+	
 }
