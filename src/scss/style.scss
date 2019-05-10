@@ -175,25 +175,29 @@
 			background-color: rgb(255, 255, 255);
 			margin-bottom: 30rem;
 			
-			> header {
+			> h5 {
 				display: flex;
 				align-items: center;
+				margin-bottom: 8rem;
 				
-				.icon {
-					width: 22px;
-					height: 22px;
-					background: no-repeat center center;
-					margin-right: 10px;
-					margin-bottom: 8rem;
+				&.i {
+					&::before {
+						content: '';
+						width: 22px;
+						height: 22px;
+						background: no-repeat center center;
+						background-size: contain;
+						margin-right: 10px;
+					}
 					
-					&.anal {
-						background-image: svg-load('../img/anal-bg.svg');
+					&.chart::before {
+						background-image: svg-load('../img/chart-bg.svg');
 					}
-					&.exp {
-						background-image: svg-load('../img/exp-bg.svg');
+					&.bag::before {
+						background-image: svg-load('../img/bag-bg.svg');
 					}
-					&.edu {
-						background-image: svg-load('../img/edu-bg.svg');
+					&.monitor::before {
+						background-image: svg-load('../img/monitor-bg.svg');
 					}
 				}
 			}
@@ -201,19 +205,37 @@
 	}
 	
 	main.login {
-		.features {
+		.features li {
+			margin-bottom: 42rem;
+			
 			h4 {
 				display: flex;
 				align-items: center;
+				margin-bottom: 10rem;
 				
-				&::before {
-					content: '';
-					width: 34rem;
-					height: 34rem;
-					background: no-repeat center center;
-					margin-right: 15px;
+				&.i {
+					&::before {
+						content: '';
+						width: 34rem;
+						height: 34rem;
+						background: no-repeat center center;
+						background-size: contain;
+						margin-right: 15px;
+					}
+					
+					&.schedule::before {
+						background-image: svg-load('../img/schedule-bg.svg');
+					}
+					&.bag::before {
+						background-image: svg-load('../img/bag-bg.svg');
+					}
+					&.screen::before {
+						background-image: svg-load('../img/screen-bg.svg');
+					}
 				}
 			}
+			
+			
 		}
 	}
 	
