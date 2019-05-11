@@ -252,4 +252,28 @@
 		}
 	}
 	
+	main.forgot_pw {
+		padding-top: 80rem;
+		background: svg-load('../img/ring-bg.svg') no-repeat top right -144rem;
+		
+		p {
+			margin-bottom: 37rem;
+		}
+		
+		.form {
+			margin-bottom: 80rem;
+			
+			.input {
+				margin-bottom: 10rem;
+				
+				@media ($sm) {
+					margin-bottom: 0;
+				}
+			}
+			.btn {
+				max-width: none;
+			}
+		}
+	}
+	
 }
