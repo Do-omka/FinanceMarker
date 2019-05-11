@@ -345,4 +345,58 @@
 		}
 	}
 	
+	.choose_your_destiny {
+		margin-top: 24rem;
+		
+		.card {
+			margin-bottom: 69rem;
+			
+			&-content {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 100%;
+				padding: 30rem;
+				background: #FFFFFF;
+				box-shadow: 0 2rem 6rem rgba(176, 186, 197, 0.600289);
+				border-radius: 10rem;
+				
+				@extend .hover;
+				
+				br {
+					display: none;
+					
+					@media ($md) {
+						display: unset;
+					}
+				}
+				
+				&.zeppelin-bg::before {
+					content: '';
+					width: 94rem;
+					height: 64rem;
+					flex-shrink: 0;
+					margin-right: 30rem;
+					background: svg-load('../img/zeppelin-bg.svg') no-repeat;
+					background-size: 100%;
+				}
+				
+				&.rocket-bg::before {
+					content: '';
+					width: 47rem;
+					height: 86rem;
+					flex-shrink: 0;
+					margin-right: 30rem;
+					background: svg-load('../img/rocket-bg.svg') no-repeat;
+					background-size: 100%;
+					transform: rotate(45deg);
+				}
+				
+				b {
+					color: rgb(22, 155, 244);
+				}
+			}
+		}
+	}
+	
 }
