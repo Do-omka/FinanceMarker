@@ -80,6 +80,10 @@ body {
 	min-height: 100%;
 	-webkit-text-fill-color: currentColor; // safari: text color fix
 	
+	main {
+		flex-grow: 1;
+	}
+	
 	& > footer {
 		margin-top: auto;
 	}
