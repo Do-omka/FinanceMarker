@@ -213,10 +213,9 @@
 	}
 	
 	main.sign {
-		padding-top: 80rem;
 		background: svg-load('../img/ring-bg.svg') no-repeat bottom -54rem right 40rem;
 		
-		.form, .features {
+		.features {
 			margin-bottom: 80rem;
 		}
 		
@@ -253,7 +252,6 @@
 	}
 	
 	main.forgot_pw {
-		padding-top: 80rem;
 		background: svg-load('../img/ring-bg.svg') no-repeat top right -144rem;
 		
 		p {
@@ -261,8 +259,6 @@
 		}
 		
 		.form {
-			margin-bottom: 80rem;
-			
 			.input {
 				margin-bottom: 10rem;
 				
@@ -338,10 +334,6 @@
 					width: auto;
 				}
 			}
-		}
-		
-		.form {
-			margin-bottom: 80rem;
 		}
 	}
 	
