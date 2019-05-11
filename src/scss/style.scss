@@ -391,4 +391,136 @@
 		}
 	}
 	
+	section.presentation {
+		h2 {
+			margin-bottom: 60rem;
+		}
+		
+		.frame {
+			@media ($lg) {
+				&:nth-of-type(2n) {
+					.text {
+						order: 1;
+					}
+				}
+			}
+			
+			> * {
+				@extend .c;
+				justify-content: center;
+				margin-bottom: 70rem;
+			}
+			
+			.text {
+				@extend .t2;
+				
+				h4 {
+					display: flex;
+					align-items: center;
+					margin-bottom: 15rem;
+					
+					&.i {
+						&::before {
+							content: '';
+							width: 24px;
+							height: 24px;
+							background: no-repeat center center;
+							background-size: contain;
+							margin-right: 10px;
+						}
+						
+						&.loupe::before {
+							background-image: svg-load('../img/loupe-bg.svg');
+						}
+						&.plus::before {
+							background-image: svg-load('../img/plus-bg.svg');
+						}
+						&.graph::before {
+							background-image: svg-load('../img/graph-bg.svg');
+						}
+						&.voice::before {
+							background-image: svg-load('../img/voice-bg.svg');
+						}
+						&.question::before {
+							background-image: svg-load('../img/question-bg.svg');
+						}
+						&.bag-2::before {
+							background-image: svg-load('../img/bag-2-bg.svg');
+						}
+						&.i-checked::before {
+							background-image: svg-load('../img/i-checked-bg.svg');
+						}
+					}
+				}
+			}
+		}
+		
+		.colors {
+			margin-top: 25rem;
+			
+			figure {
+				display: flex;
+				
+				dt {
+					font-weight: 700;
+				}
+				
+				&::before {
+					content: '';
+					width: 65rem;
+					height: 60rem;
+					border-radius: 4rem;
+					margin-right: 16rem;
+				}
+				
+				&.green {
+					dt {
+						color: rgb(41, 197, 218);
+					}
+					
+					&::before {
+						background-color: rgb(41, 197, 218);
+					}
+				}
+				
+				&.red {
+					dt {
+						color: rgb(252, 76, 108);
+					}
+					
+					&::before {
+						background-color: rgb(252, 76, 108);
+					}
+				}
+			}
+		}
+	}
+	
+	section.banner.try_pro {
+		padding: 94rem 0;
+		color: white;
+		background-color: rgb(22, 155, 244);
+		margin-top: 30rem;
+		margin-bottom: 90rem;
+		
+		h2 {
+			text-align: center;
+			margin-bottom: 30rem;
+		}
+		
+		.content {
+			@extend .c;
+			
+			.btn {
+				align-self: center;
+			}
+		}
+		
+		+ * {
+			background: svg-load('../img/bg-bg.svg') no-repeat;
+			background-size: 100% 800rem;
+		}
+		
+	}
+	
 }
