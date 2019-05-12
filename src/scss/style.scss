@@ -208,7 +208,8 @@
 	}
 	
 	main.sign {
-		background: url('../img/ring-bg.svg') no-repeat bottom -54rem right 40rem;
+		background: url('../img/ring.svg') no-repeat bottom -54rem right 40rem;
+		background-size: 502rem;
 		
 		.features {
 			margin-bottom: 80rem;
@@ -247,7 +248,8 @@
 	}
 	
 	main.forgot_pw {
-		background: url('../img/ring-bg.svg') no-repeat top right -144rem;
+		background: url('../img/ring.svg') no-repeat bottom -150rem right -144rem;
+		background-size: 502rem;
 		
 		p {
 			margin-bottom: 37rem;

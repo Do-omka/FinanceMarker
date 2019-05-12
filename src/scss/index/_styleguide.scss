@@ -292,19 +292,28 @@ form:hover {
 	
 	&-1 {
 		background: url(../img/ring.svg) no-repeat top 350rem right 28rem;
+		background-size: 500rem;
 	}
 	
 	&-2 {
 		padding-top: 90rem;
 		background: url(../img/ring.svg) no-repeat top 715rem center,
 		url('../img/bg.svg') no-repeat;
-		background-size: auto, 100% 800rem;
+		background-size: 500rem, 100% 800rem;
 	}
 	
 	&-3 {
 		background: url(../img/ring.svg) no-repeat bottom left -44rem;
+		background-size: 380rem;
 		padding-bottom: 250rem;
 		margin-bottom: -75rem;
+	}
+	
+	&-4 {
+		background: url(../img/ring.svg) no-repeat bottom left -102rem;
+		background-size: 502rem;
+		padding-bottom: 375rem;
+		margin-bottom: -265rem;
 	}
 }
 
