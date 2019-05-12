@@ -32,6 +32,7 @@ body {
 	font-family: 'Avenir Next Cyr';
 	font-size: 14rem;
 	font-weight: 700;
+	cursor: pointer;
 	
 	&:hover {
 		background-color: rgb(4, 130, 214);
@@ -178,6 +179,7 @@ form:hover {
 		font-weight: 700;
 		box-shadow: 0 2rem 6rem rgba(176, 186, 197, 0.6);
 		border-radius: 6rem;
+		cursor: pointer;
 		margin: 0 7.5px 15px;
 		
 		@extend .hover;
