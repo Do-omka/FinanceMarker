@@ -384,12 +384,12 @@
 	}
 	
 	.presentation {
+		padding-bottom: 30rem;
+		
 		&-content {
 			padding-top: 40rem;
 			
 			.frame {
-				padding-bottom: 40rem;
-				
 				@media ($lg) {
 					&:nth-of-type(2n) {
 						.text {
@@ -495,7 +495,6 @@
 		padding: 94rem 0;
 		color: white;
 		background-color: rgb(22, 155, 244);
-		margin-top: 30rem;
 		
 		.content {
 			@extend .c;
