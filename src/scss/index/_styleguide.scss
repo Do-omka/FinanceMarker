@@ -3,7 +3,7 @@ $text-color: rgb(10, 31, 68);
 body {
 	@extend .t1;
 	color: $text-color;
-	background: url('../img/bg-bg.svg') no-repeat;
+	background: url('../img/bg.svg') no-repeat;
 	background-size: 100% 672rem;
 }
 
@@ -279,18 +279,18 @@ form:hover {
 .bg-ring {
 	
 	&-1 {
-		background: url(../img/ring-bg.svg) no-repeat top 350rem right 28rem;
+		background: url(../img/ring.svg) no-repeat top 350rem right 28rem;
 	}
 	
 	&-2 {
 		padding-top: 90rem;
-		background: url(../img/ring-bg.svg) no-repeat top 715rem center,
-		url('../img/bg-bg.svg') no-repeat;
+		background: url(../img/ring.svg) no-repeat top 715rem center,
+		url('../img/bg.svg') no-repeat;
 		background-size: auto, 100% 800rem;
 	}
 	
 	&-3 {
-		background: url(../img/ring-bg.svg) no-repeat bottom left -44rem;
+		background: url(../img/ring.svg) no-repeat bottom left -44rem;
 		padding-bottom: 250rem;
 		margin-bottom: -75rem;
 	}
