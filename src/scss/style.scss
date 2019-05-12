@@ -174,32 +174,34 @@
 			box-shadow: 0 3rem 8rem rgba(0, 0, 0, 0.1), 0 0 2rem rgba(0, 0, 0, 0.06);
 			border-radius: 10rem;
 			background-color: white;
-			margin-bottom: 30rem;
+			margin-bottom: 40rem;
+			
+			@extend .hover;
 			
 			> h5 {
 				display: flex;
 				align-items: center;
 				margin-bottom: 8rem;
+			}
+			
+			.i {
+				&::before {
+					content: '';
+					width: 22px;
+					height: 22px;
+					background: no-repeat center center;
+					background-size: contain;
+					margin-right: 10px;
+				}
 				
-				&.i {
-					&::before {
-						content: '';
-						width: 22px;
-						height: 22px;
-						background: no-repeat center center;
-						background-size: contain;
-						margin-right: 10px;
-					}
-					
-					&.chart::before {
-						background-image: svg-load('../img/chart-bg.svg');
-					}
-					&.bag::before {
-						background-image: svg-load('../img/bag-bg.svg');
-					}
-					&.monitor::before {
-						background-image: svg-load('../img/monitor-bg.svg');
-					}
+				&.chart::before {
+					background-image: svg-load('../img/chart-bg.svg');
+				}
+				&.bag::before {
+					background-image: svg-load('../img/bag-bg.svg');
+				}
+				&.monitor::before {
+					background-image: svg-load('../img/monitor-bg.svg');
 				}
 			}
 		}
@@ -514,7 +516,7 @@
 			justify-content: center;
 			
 			.card {
-				margin-bottom: 30rem;
+				margin-bottom: 40rem;
 				
 				&-content {
 					@extend .c;
