@@ -553,4 +553,103 @@
 		}
 	}
 	
+	.underrated_stocks {
+		padding-top: 70rem;
+		
+		&-content {
+			.card {
+				&-content {
+					@extend .c;
+					box-shadow: 0 3rem 8rem rgba(0, 0, 0, 0.1), 0 0 2rem rgba(0, 0, 0, 0.06);
+					border-radius: 10rem;
+					color: rgb(102, 117, 135);
+					background-color: white;
+					margin-bottom: 40rem;
+					
+					&:hover {
+						.explanation {
+							top: 13rem;
+						}
+					}
+					@extend .hover;
+					
+					> header {
+						@extend .c;
+						justify-content: center;
+						align-items: center;
+						border-bottom: 1px solid rgb(223, 230, 238);
+						
+						.img {
+							@extend .c;
+							justify-content: center;
+							align-items: center;
+							width: 255rem;
+							height: 100rem;
+							padding: 0 34rem;
+						}
+					}
+					
+					.body {
+						position: relative;
+						overflow: hidden;
+						height: 300rem;
+						padding: 15rem 20rem 20rem;
+						@extend .t3;
+						
+						p {
+							margin-bottom: 7rem;
+						}
+						
+						b {
+							display: block;
+							color: $text-color;
+							font-size: 17rem;
+							line-height: 20rem;
+							font-weight: 700;
+							margin-bottom: 16rem;
+						}
+						
+						.profit {
+							color: rgb(0, 193, 76);
+						}
+						
+						&-header {
+							display: flex;
+							justify-content: space-between;
+							// margin-bottom: 46rem;
+							
+							.name {
+								font-size: 16rem;
+								font-weight: 700;
+								// margin-left: 20rem;
+							}
+						}
+					}
+					
+					.explanation {
+						position: absolute;
+						top: 100%;
+						bottom: 0;
+						left: 0;
+						right: 0;
+						padding: 15rem 20rem 0;
+						background: white;
+						box-shadow: 0 2rem 6rem rgba(176, 186, 197, 0.600289);
+						border-radius: 10rem;
+						transition: .2s all;
+						
+						h6 {
+							margin-bottom: 7rem;
+						}
+						
+						p {
+							color: $text-color;
+							margin-bottom: 15rem;
+						}
+					}
+				}
+			}
+		}
+	}
+	
 }

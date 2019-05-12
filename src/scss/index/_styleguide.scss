@@ -110,6 +110,14 @@ h5 {
 	line-height: 20rem;
 }
 
+.rubles {
+	&::after {
+		content: '₽';
+		display: inline;
+		font-family: 'Circe';
+	}
+}
+
 .input {
 	width: 100%;
 	min-width: 0;
