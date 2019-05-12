@@ -84,6 +84,7 @@
 		h2 {
 			font-size: 16rem;
 			line-height: 20rem;
+			text-align: left;
 			margin-bottom: 5rem;
 		}
 		
@@ -151,7 +152,6 @@
 	}
 	
 	.index-top {
-		
 		.content {
 			align-items: flex-end;
 			
@@ -219,26 +219,26 @@
 				display: flex;
 				align-items: center;
 				margin-bottom: 10rem;
+			}
+			
+			.i {
+				&::before {
+					content: '';
+					width: 34rem;
+					height: 34rem;
+					background: no-repeat center center;
+					background-size: contain;
+					margin-right: 15px;
+				}
 				
-				&.i {
-					&::before {
-						content: '';
-						width: 34rem;
-						height: 34rem;
-						background: no-repeat center center;
-						background-size: contain;
-						margin-right: 15px;
-					}
-					
-					&.schedule::before {
-						background-image: svg-load('../img/schedule-bg.svg');
-					}
-					&.bag::before {
-						background-image: svg-load('../img/bag-bg.svg');
-					}
-					&.screen::before {
-						background-image: svg-load('../img/screen-bg.svg');
-					}
+				&.schedule::before {
+					background-image: svg-load('../img/schedule-bg.svg');
+				}
+				&.bag::before {
+					background-image: svg-load('../img/bag-bg.svg');
+				}
+				&.screen::before {
+					background-image: svg-load('../img/screen-bg.svg');
 				}
 			}
 		}
@@ -265,7 +265,7 @@
 		}
 	}
 	
-	section.join {
+	.join {
 		z-index: 0;
 		
 		&.rocket-bg {
@@ -305,10 +305,6 @@
 			}
 		}
 		
-		h2 {
-			text-align: center;
-		}
-		
 		.content {
 			align-items: center;
 		}
@@ -332,10 +328,10 @@
 	}
 	
 	.choose_your_destiny {
-		margin-top: 24rem;
+		padding: 24rem 0 10rem;
 		
 		.card {
-			margin-bottom: 69rem;
+			margin-bottom: 30rem;
 			
 			&-content {
 				display: flex;
@@ -385,37 +381,37 @@
 		}
 	}
 	
-	section.presentation {
-		@extend .c;
-		
-		h2 {
-			margin-bottom: 60rem;
-		}
-		
-		.frame {
-			@media ($lg) {
-				&:nth-of-type(2n) {
-					.text {
-						order: 1;
+	.presentation {
+		&-content {
+			padding-top: 40rem;
+			
+			.frame {
+				padding-bottom: 40rem;
+				
+				@media ($lg) {
+					&:nth-of-type(2n) {
+						.text {
+							order: 1;
+						}
 					}
 				}
-			}
-			
-			> * {
-				@extend .c;
-				justify-content: center;
-				margin-bottom: 70rem;
-			}
-			
-			.text {
-				@extend .t2;
 				
-				h4 {
-					display: flex;
-					align-items: center;
-					margin-bottom: 15rem;
+				> * {
+					@extend .c;
+					justify-content: center;
+					margin-bottom: 70rem;
+				}
+				
+				.text {
+					@extend .t2;
 					
-					&.i {
+					h4 {
+						display: flex;
+						align-items: center;
+						margin-bottom: 15rem;
+					}
+					
+					.i {
 						&::before {
 							content: '';
 							width: 24px;
@@ -447,61 +443,57 @@
 							background-image: svg-load('../img/i-checked-bg.svg');
 						}
 					}
-				}
-			}
-		}
-		
-		.colors {
-			margin-top: 25rem;
-			
-			figure {
-				display: flex;
-				
-				dt {
-					font-weight: 700;
-				}
-				
-				&::before {
-					content: '';
-					width: 65rem;
-					height: 60rem;
-					border-radius: 4rem;
-					margin-right: 16rem;
-				}
-				
-				&.green {
-					dt {
-						color: rgb(41, 197, 218);
-					}
 					
-					&::before {
-						background-color: rgb(41, 197, 218);
-					}
-				}
-				
-				&.red {
-					dt {
-						color: rgb(252, 76, 108);
-					}
 					
-					&::before {
-						background-color: rgb(252, 76, 108);
+					.colors {
+						margin-top: 25rem;
+						
+						figure {
+							display: flex;
+							
+							dt {
+								font-weight: 700;
+							}
+							
+							&::before {
+								content: '';
+								width: 65rem;
+								height: 60rem;
+								border-radius: 4rem;
+								margin-right: 16rem;
+							}
+							
+							&.green {
+								dt {
+									color: rgb(41, 197, 218);
+								}
+								
+								&::before {
+									background-color: rgb(41, 197, 218);
+								}
+							}
+							
+							&.red {
+								dt {
+									color: rgb(252, 76, 108);
+								}
+								
+								&::before {
+									background-color: rgb(252, 76, 108);
+								}
+							}
+						}
 					}
 				}
 			}
 		}
 	}
 	
-	section.banner.try_pro {
+	.banner.try_pro {
 		padding: 94rem 0;
 		color: white;
 		background-color: rgb(22, 155, 244);
 		margin-top: 30rem;
-		
-		h2 {
-			text-align: center;
-			margin-bottom: 30rem;
-		}
 		
 		.content {
 			@extend .c;
@@ -516,11 +508,6 @@
 		a {
 			display: inline;
 			color: rgb(22, 155, 244);
-		}
-		
-		h2 {
-			text-align: center;
-			margin-bottom: 40rem;
 		}
 		
 		&-content {
