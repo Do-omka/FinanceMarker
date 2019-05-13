@@ -303,17 +303,26 @@ form:hover {
 	}
 	
 	&-3 {
+		padding-bottom: 250rem;
 		background: url(../img/ring.svg) no-repeat bottom left -44rem;
 		background-size: 380rem;
-		padding-bottom: 250rem;
 		margin-bottom: -75rem;
 	}
 	
 	&-4 {
-		background: url(../img/ring.svg) no-repeat bottom left -102rem;
-		background-size: 502rem;
 		padding-bottom: 375rem;
+		background: url(../img/ring.svg) no-repeat bottom right -104rem;
+		background-size: 502rem;
 		margin-bottom: -265rem;
+	}
+	
+	&-5 {
+		padding-top: 150rem;
+		padding-bottom: 440rem;
+		background: url(../img/ring.svg) no-repeat bottom 50rem right -104rem,
+		url('../img/bg.svg') no-repeat;
+		background-size: 500rem, 100% 1135rem;
+		margin-bottom: -320rem;
 	}
 }
 
