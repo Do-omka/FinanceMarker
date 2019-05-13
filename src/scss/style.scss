@@ -504,6 +504,23 @@
 		color: white;
 		background-color: rgb(22, 155, 244);
 		
+		@media ($xl) {
+			&.laptop {
+				position: relative;
+				
+				&::after {
+					content: '';
+					position: absolute;
+					top: -61rem;
+					right: 0;
+					bottom: -35rem;
+					width: 45%;
+					background: url(../img/laptop.png) no-repeat right center;
+					background-size: contain;
+				}
+			}
+		}
+		
 		.content {
 			@extend .c;
 			
