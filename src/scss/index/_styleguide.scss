@@ -288,50 +288,6 @@ form:hover {
 	}
 }
 
-.bg-ring {
-	
-	&-1 {
-		background: url(../img/ring.svg) no-repeat top 350rem right 28rem;
-		background-size: 500rem;
-	}
-	
-	&-2 {
-		padding-top: 90rem;
-		background: url(../img/ring.svg) no-repeat top 715rem center,
-		url('../img/bg.svg') no-repeat;
-		background-size: 500rem, 100% 800rem;
-	}
-	
-	&-3 {
-		padding-bottom: 250rem;
-		background: url(../img/ring.svg) no-repeat bottom left -44rem;
-		background-size: 380rem;
-		margin-bottom: -75rem;
-	}
-	
-	&-4 {
-		padding-bottom: 375rem;
-		background: url(../img/ring.svg) no-repeat bottom right -104rem;
-		background-size: 502rem;
-		margin-bottom: -265rem;
-	}
-	
-	&-5 {
-		padding-top: 150rem;
-		padding-bottom: 440rem;
-		background: url(../img/ring.svg) no-repeat bottom 50rem right -104rem,
-		url('../img/bg.svg') no-repeat;
-		background-size: 500rem, 100% 1135rem;
-		margin-bottom: -320rem;
-	}
-	
-	&-6 {
-		padding-bottom: 170rem;
-		background: url(../img/ring.svg) no-repeat bottom 10rem left -44rem;
-		background-size: 380rem;
-	}
-}
-
 .oleja {
 	color: rgb(247, 181, 0) !important;
 }

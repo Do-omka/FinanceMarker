@@ -1,5 +1,5 @@
 .fm_ {
-	@import 'index/index';
+	@import 'index';
 	
 	& {
 		font-size: .6px;
@@ -808,4 +808,5 @@
 		}
 	}
 	
+	@import 'index/bgs';
 }
