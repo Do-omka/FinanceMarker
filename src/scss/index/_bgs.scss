@@ -40,4 +40,17 @@
 		background: url(../img/ring.svg) no-repeat bottom 10rem left -44rem;
 		background-size: 380rem;
 	}
+	
+	&-7 {
+		padding-bottom: 170rem;
+		background: svg-load('bg-ring-7-bg.svg') no-repeat bottom left 44rem;
+		background-size: 100%;
+	}
+}
+
+.bg-rocket {
+	@media ($sm) {
+		background: svg-load('../img/bg-rocket-bg.svg') no-repeat;
+		background-size: 100%;
+	}
 }
