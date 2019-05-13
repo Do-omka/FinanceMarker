@@ -536,6 +536,7 @@
 		a {
 			display: inline;
 			color: rgb(22, 155, 244);
+			font-weight: 700;
 		}
 		
 		&-content {
@@ -737,6 +738,69 @@
 						}
 						&.graph-2::before {
 							background-image: svg-load('../img/graph-2-bg.svg');
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	.last_user_reviews {
+		
+		&-content {
+			.card {
+				margin-bottom: 40rem;
+				
+				&-content {
+					@extend .c;
+					height: 100%;
+					padding: 20rem 30rem;
+					@extend .t2;
+					background: white;
+					box-shadow: 0 2rem 6rem rgba(176, 186, 197, 0.600289);
+					border-radius: 10rem;
+					overflow: hidden;
+					@extend .hover;
+					
+					p {
+						margin-bottom: 1em;
+					}
+					
+					> header {
+						display: flex;
+						margin-bottom: 15rem;
+						
+						.img {
+							width: 47rem;
+							height: 47rem;
+							margin-right: 10rem;
+						}
+						
+						.text {
+							font-weight: 700;
+							
+							.status {
+								@extend .t3;
+								font-weight: 700;
+								color: rgb(127, 144, 164);
+							}
+						}
+					}
+					
+					> footer {
+						display: flex;
+						justify-content: flex-end;
+						@extend .t3;
+						margin-top: auto;
+						
+						a {
+							display: inline;
+							color: rgb(22, 155, 244);
+							font-weight: 700;
+							
+							&:hover {
+								text-decoration: underline;
+							}
 						}
 					}
 				}
