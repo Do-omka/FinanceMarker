@@ -64,6 +64,7 @@
 					}
 					
 					.btn {
+						font-size: 14rem;
 						padding-top: 8rem;
 						padding-bottom: 8rem;
 						
@@ -149,8 +150,8 @@
 			.btn {
 				flex: 1 1 33%;
 				padding: 10rem 17rem;
+				font-size: 14rem;
 				margin: 0 5px;
-				
 				@extend .hover;
 			}
 		}
