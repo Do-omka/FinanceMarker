@@ -659,4 +659,70 @@
 		}
 	}
 	
+	.all_for_anal {
+		padding-bottom: 70rem;
+		
+		&-content {
+			> header {
+				margin-bottom: 40rem;
+				@extend .c;
+				justify-content: center;
+				h2 {
+					text-align: left;
+					margin-bottom: 10rem;
+				}
+			}
+			.card {
+				margin-bottom: 40rem;
+				
+				&-content {
+					@extend .c;
+					height: 100%;
+					padding: 30rem;
+					background: #FFFFFF;
+					box-shadow: 0 2rem 6rem rgba(176, 186, 197, 0.600289);
+					border-radius: 10rem;
+					@extend .hover;
+					
+					h4 {
+						margin-bottom: 25rem;
+						
+						@media ($xl) {
+							white-space: nowrap;
+						}
+					}
+					
+					.i {
+						display: flex;
+						
+						&::before {
+							content: '';
+							width: 34rem;
+							height: 34rem;
+							background: no-repeat center center;
+							background-size: contain;
+							margin-right: 15rem;
+						}
+						
+						&.bulbhead::before {
+							background-image: svg-load('../img/bulbhead-bg.svg');
+						}
+						&.bag::before {
+							background-image: svg-load('../img/bag-bg.svg');
+						}
+						&.screen::before {
+							background-image: svg-load('../img/screen-bg.svg');
+						}
+						&.info::before {
+							background-image: svg-load('../img/info-bg.svg');
+						}
+						&.graph-2::before {
+							background-image: svg-load('../img/graph-2-bg.svg');
+						}
+					}
+				}
+			}
+		}
+	}
+	
 }
