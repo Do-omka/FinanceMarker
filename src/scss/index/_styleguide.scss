@@ -335,3 +335,46 @@ form:hover {
 .oleja {
 	color: rgb(247, 181, 0) !important;
 }
+
+.slider {
+	
+	.container.overflow {
+		position: relative;
+		overflow: visible;
+	}
+	
+	.slides {
+		flex-wrap: nowrap;
+		transition: .2s all;
+	}
+	
+	.controls {
+		display: flex;
+		justify-content: space-between;
+		position: absolute;
+		top: 50%;
+		left: 0;
+		right: 0;
+		transform: translateY(-50%);
+		z-index: 1;
+		
+		> * {
+			width: 30px;
+			height: 30px;
+			background: svg-load('../img/slider-arrow-bg.svg');
+			background-size: 100% 100%;
+			cursor: default;
+			
+			&.active {
+				background-image: svg-load('../img/slider-arrow-bg.svg', fill=rgb(22, 155, 244));
+				cursor: pointer;
+			}
+		}
+		.prev {
+			transform: translateX(50%);
+		}
+		.next {
+			transform: translateX(-50%) rotate(180deg);
+		}
+	}
+}
