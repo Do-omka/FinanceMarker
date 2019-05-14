@@ -4,16 +4,16 @@
 	@import 'index';
 	
 	& {
-		font-size: .6px;
+		font-size: .7px;
 		
 		@media ($sm) {
-			font-size: .7px;
+			font-size: .85px;
 		}
 		@media ($md) {
-			font-size: .8px;
+			font-size: .9px;
 		}
 		@media ($lg) {
-			font-size: .9px;
+			font-size: .95px;
 		}
 		@media ($xl) {
 			font-size: 1px;
@@ -820,6 +820,7 @@
 		}
 		
 		h4 {
+			font-size: 20rem;
 			margin-bottom: 13rem;
 		}
 		
@@ -944,6 +945,7 @@
 					@extend .c, .t2;
 					justify-content: center;
 					align-items: center;
+					text-align: center;
 					height: 100rem;
 					padding-left: 20rem;
 					padding-right: 20rem;
@@ -953,6 +955,7 @@
 					@extend .c;
 					justify-content: center;
 					align-items: center;
+					text-align: center;
 					height: 165rem;
 					padding-left: 20rem;
 					padding-right: 20rem;
