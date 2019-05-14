@@ -689,8 +689,10 @@
 				margin-bottom: 40rem;
 				@extend .c;
 				justify-content: center;
+				
 				h2 {
 					text-align: left;
+					align-items: center;
 					margin-bottom: 10rem;
 				}
 			}
