@@ -280,40 +280,51 @@
 	.join {
 		z-index: 0;
 		
+		// &.rocket-bg {
+		// 	@media ($lg) {
+		// 		position: relative;
+		// 		overflow: hidden;
+		// 		margin-bottom: -1px;
+		//
+		// 		&::before,
+		// 		&::after {
+		// 			content: '';
+		// 			position: absolute;
+		// 			bottom: 0;
+		// 			left: 0;
+		// 			right: 0;
+		// 			height: 225rem;
+		// 			background-size: 675rem 100% !important;
+		// 			z-index: -1;
+		// 			margin-left: -.5px;
+		// 			margin-right: -.5px;
+		// 		}
+		//
+		// 		&::before {
+		// 			right: 50%;
+		// 			background: url(../img/rocket-bg-left.png) no-repeat right bottom;
+		// 		}
+		// 		&::after {
+		// 			left: 50%;
+		// 			background: url(../img/rocket-bg-right.png) no-repeat left bottom;
+		// 		}
+		// 	}
+		// 	@media ($xl) {
+		// 		&::before,
+		// 		&::after {
+		// 			background-size: auto !important;
+		// 		}
+		// 	}
+		// }
+		//
+		
 		&.rocket-bg {
 			@media ($lg) {
-				position: relative;
-				overflow: hidden;
-				margin-bottom: -1px;
-				
-				&::before,
-				&::after {
-					content: '';
-					position: absolute;
-					bottom: 0;
-					left: 0;
-					right: 0;
-					height: 225rem;
-					background-size: 675rem 100% !important;
-					z-index: -1;
-					margin-left: -.5px;
-					margin-right: -.5px;
-				}
-				
-				&::before {
-					right: 50%;
-					background: url(../img/rocket-bg-left.png) no-repeat right bottom;
-				}
-				&::after {
-					left: 50%;
-					background: url(../img/rocket-bg-right.png) no-repeat left bottom;
-				}
+				background: svg-load('../img/perdeajue-bg.svg') no-repeat bottom center / 1060rem 200rem;
 			}
+			
 			@media ($xl) {
-				&::before,
-				&::after {
-					background-size: auto !important;
-				}
+				background-size: 1160rem 200rem;
 			}
 		}
 		
