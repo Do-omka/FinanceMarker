@@ -13,10 +13,14 @@
 	}
 	
 	&-3 {
-		padding-bottom: 250rem;
+		padding-bottom: 175rem;
 		background: url(../img/ring.svg) no-repeat bottom left -44rem;
 		background-size: 380rem;
 		margin-bottom: -75rem;
+		
+		@media ($xl) {
+			padding-bottom: 250rem;
+		}
 	}
 	
 	&-4 {
@@ -36,9 +40,13 @@
 	}
 	
 	&-6 {
-		padding-bottom: 170rem;
+		padding-bottom: 100rem;
 		background: url(../img/ring.svg) no-repeat bottom 10rem left -44rem;
 		background-size: 380rem;
+		
+		@media ($xl) {
+			padding-bottom: 170rem;
+		}
 	}
 	
 	&-7 {
