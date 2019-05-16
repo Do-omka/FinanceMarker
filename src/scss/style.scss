@@ -162,15 +162,37 @@
 		.content {
 			align-items: flex-end;
 			
-			.text {
-				@media ($md) {
-					margin-bottom: 85rem;
-				}
-				
-				p {
-					margin-bottom: 40rem;
+			@media ($md) {
+				.dn {
+					display: block !important;
 				}
 			}
+			
+			.text {
+				@extend .c;
+				
+				@media ($md) {
+					margin-bottom: 50rem;
+				}
+				
+				h2 {
+					text-align: left;
+					margin-bottom: 40rem;
+					
+					@media ($md) {
+						font-size: 21rem;
+						font-weight: 400;
+					}
+				}
+				
+				.btn {
+					margin-bottom: 35rem;
+					
+					@media ($md) {
+					}
+				}
+			}
+			
 			.img img {
 				margin-bottom: -3%;
 			}
