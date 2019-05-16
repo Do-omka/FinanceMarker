@@ -185,12 +185,12 @@
 			@extend .hover;
 			
 			> h5 {
-				align-items: center;
 				margin-bottom: 8rem;
 			}
 			
 			.i {
 				display: flex;
+				align-items: center;
 				
 				&::before {
 					content: '';
@@ -226,12 +226,12 @@
 			margin-bottom: 42rem;
 			
 			h4 {
-				align-items: center;
 				margin-bottom: 10rem;
 			}
 			
 			.i {
 				display: flex;
+				align-items: center;
 				
 				&::before {
 					content: '';
@@ -428,12 +428,12 @@
 					@extend .t2;
 					
 					h4 {
-						align-items: center;
 						margin-bottom: 15rem;
 					}
 					
 					.i {
 						display: flex;
+						align-items: center;
 						
 						&::before {
 							content: '';
@@ -703,7 +703,6 @@
 				
 				h2 {
 					text-align: left;
-					align-items: center;
 					margin-bottom: 10rem;
 				}
 			}
@@ -729,6 +728,7 @@
 					
 					.i {
 						display: flex;
+						align-items: center;
 						
 						&::before {
 							content: '';
@@ -884,6 +884,7 @@
 		
 		.i {
 			display: flex;
+			align-items: center;
 			
 			&::before {
 				content: '';
