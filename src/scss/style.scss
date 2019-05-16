@@ -341,12 +341,15 @@
 		//
 		
 		&.rocket-bg {
+			margin-bottom: -1px;
+			
 			@media ($lg) {
-				background: svg-load('../img/perdeajue-bg.svg') no-repeat bottom center / 1060rem 200rem;
+				background: svg-load('../img/perdeajue-bg.svg') no-repeat bottom -28rem center / 1040rem 200rem;
 			}
 			
 			@media ($xl) {
-				background-size: 1160rem 200rem;
+				background-size: 1160rem 240rem;
+				background-position: bottom -36rem center;
 			}
 		}
 		
@@ -356,6 +359,7 @@
 		
 		.rocket {
 			display: none;
+			align-self: flex-end;
 			
 			@media ($lg) {
 				display: block;
@@ -365,8 +369,10 @@
 				@extend .c;
 				justify-content: flex-end;
 				align-items: center;
+				
 				img {
 					width: auto;
+					max-width: 100%;
 				}
 			}
 		}
