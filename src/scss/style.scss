@@ -409,13 +409,14 @@
 				
 				&.rocket-bg::before {
 					content: '';
-					width: 47rem;
-					height: 86rem;
+					width: 94rem;
+					height: 64rem;
+					// width: 47rem;
+					// height: 86rem;
 					flex-shrink: 0;
 					margin-right: 30rem;
-					background: svg-load('../img/rocket-bg.svg') no-repeat;
-					background-size: 100%;
-					transform: rotate(45deg);
+					background: svg-load('../img/rocket-bg.svg') no-repeat center / contain;
+					// transform: rotate(45deg);
 				}
 				
 				b {
