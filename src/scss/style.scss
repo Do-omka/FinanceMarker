@@ -62,7 +62,7 @@
 					}
 					
 					a:not(.btn):hover {
-						color: rgb(22, 155, 244);
+						// color: rgb(22, 155, 244);
 					}
 					
 					.btn {
@@ -608,7 +608,7 @@
 						@extend .t3;
 						
 						a:hover {
-							@extend .link;
+							// @extend .link;
 						}
 					}
 				}
@@ -837,7 +837,7 @@
 							font-weight: 700;
 							
 							&:hover {
-								text-decoration: underline;
+								// text-decoration: underline;
 							}
 						}
 					}
