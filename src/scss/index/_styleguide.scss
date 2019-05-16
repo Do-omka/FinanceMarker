@@ -260,14 +260,14 @@ form:hover {
 			.checkbox {
 				width: 20px;
 				height: 20px;
+				border: 1px solid rgb(22, 155, 244);
 				border-radius: 4rem;
-				background:  rgb(22, 155, 244) no-repeat center;
+				background: white;
 				margin-right: 10px;
 			}
 			
 			input:checked + .checkbox {
-				background-image: svg-load('../img/checked-bg.svg');
-				background-size: 13px 10px;
+				background: rgb(22, 155, 244) svg-load('../img/checked-bg.svg') no-repeat center / 13px 10px;
 			}
 		}
 		
