@@ -9,15 +9,16 @@
 // }
 
 document.addEventListener('DOMContentLoaded', (e)=> {
-	if (document.querySelector('.slider')) {
-		let slider = document.querySelector('.slider'),
-			slides = slider.querySelector('.slides'),
-			next = slider.querySelector('.controls .next'),
-			prev = slider.querySelector('.controls .prev'),
-			width = slides.querySelector('.slide').clientWidth,
-			total = slides.children.length,
-			showcase = slides.clientWidth / width,
-			current = 1
+	if (document.querySelectorAll('.slider')) {
+		let sliders = document.querySelectorAll('.slider');
+		for (let i = 0; i < sliders.length; i++) {
+			let slides = sliders[i].querySelector('.slides'),
+				next = sliders[i].querySelector('.controls .next'),
+				prev = sliders[i].querySelector('.controls .prev'),
+				width = slides.querySelector('.slide').clientWidth,
+				total = slides.children.length,
+				showcase = slides.clientWidth / width,
+				current = 1
 			
 		// slides.dataset.active = current
 		
@@ -65,5 +66,6 @@ document.addEventListener('DOMContentLoaded', (e)=> {
 				}
 			}
 		})
+		}
 	}
 })

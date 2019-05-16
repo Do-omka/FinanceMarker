@@ -625,15 +625,25 @@
 	.underrated_stocks {
 		padding-top: 70rem;
 		
+		.controls > * {
+			width: 25px;
+			height: 25px;
+		}
+		
 		&-content {
+			flex-wrap: nowrap;
+			
 			.card {
+				margin-bottom: 40rem;
+				
 				&-content {
 					@extend .c;
+					height: 100%;
 					box-shadow: 0 3rem 8rem rgba(0, 0, 0, 0.1), 0 0 2rem rgba(0, 0, 0, 0.06);
 					border-radius: 10rem;
 					color: rgb(102, 117, 135);
 					background-color: white;
-					margin-bottom: 40rem;
+					overflow: hidden;
 					
 					&:hover {
 						.explanation {
@@ -659,11 +669,16 @@
 					}
 					
 					.body {
+						@extend .c;
 						position: relative;
 						overflow: hidden;
-						height: 300rem;
-						padding: 15rem 20rem 20rem;
+						flex-grow: 1;
+						padding: 15rem 20rem 0;
 						@extend .t3;
+						
+						@media ($xl) {
+							height: 300rem;
+						}
 						
 						p {
 							margin-bottom: 7rem;
@@ -696,16 +711,23 @@
 					}
 					
 					.explanation {
-						position: absolute;
-						top: 100%;
-						bottom: 0;
-						left: 0;
-						right: 0;
+						flex-grow: 1;
 						padding: 15rem 20rem 0;
 						background: white;
 						box-shadow: 0 2rem 6rem rgba(176, 186, 197, 0.600289);
 						border-radius: 10rem;
 						transition: .2s all;
+						margin-left: -20rem;
+						margin-right: -20rem;
+						
+						@media ($xl) {
+							position: absolute;
+							top: 100%;
+							bottom: 0;
+							left: 0;
+							right: 0;
+							margin: 0;
+						}
 						
 						h6 {
 							margin-bottom: 7rem;
