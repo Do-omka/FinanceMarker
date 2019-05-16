@@ -937,7 +937,7 @@
 			padding-left: 20rem;
 			padding-right: 20rem;
 			border-top: 1px solid #DFE6EE;
-			border-bottom: 1px solid #DFE6EE;
+			// border-bottom: 1px solid #DFE6EE;
 			
 			&:first-child {
 				height: 100rem;
@@ -949,6 +949,10 @@
 				justify-content: center;
 				text-align: center;
 			}
+			
+			> footer {
+				border-top: 1px solid #DFE6EE;
+			}
 		}
 		
 		.legend {
@@ -956,6 +960,12 @@
 			
 			@media ($xl) {
 				padding-right: 15px;
+			}
+			
+			&-content .body {
+				:first-child {
+					border-top: none;
+				}
 			}
 		}
 		
@@ -1017,6 +1027,10 @@
 				border: 1px solid #27AE60;
 				border-top: 17rem solid #27AE60;
 				margin-top: calc(1px - 17rem);
+				
+				> footer {
+					border-color: #27AE60;
+				}
 				
 				.discount {
 					background: rgba(39, 174, 96, 0.05);
