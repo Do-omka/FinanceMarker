@@ -439,7 +439,7 @@
 			padding-top: 40rem;
 			
 			.frame {
-				@media ($lg) {
+				@media ($md) {
 					&:nth-of-type(2n) {
 						.text {
 							order: 1;
