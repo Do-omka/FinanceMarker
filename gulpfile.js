@@ -17,9 +17,11 @@ const
 	// remember = require('gulp-remember'),
 	svgOptions = {
 		plugins: [
-			// {removeViewBox: false},
+			{addAttributesToSVGElement: {attributes: [
+				{preserveAspectRatio: 'none'},
+			]}},
+			{removeViewBox: false},
 			// {removeDimensions: true},
-			// {cleanupIDs: true},
 		],
 	}
 
