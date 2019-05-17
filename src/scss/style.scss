@@ -920,8 +920,10 @@
 				}
 				
 			}
-		
+			
+			cursor: pointer;
 			&:hover{
+				cursor: default;
 				.hint {
 					background-image: svg-load('../img/hint-bg.svg', fill=#169BF4);
 					
