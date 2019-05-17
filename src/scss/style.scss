@@ -895,7 +895,6 @@
 				background-image: svg-load('../img/hint-bg.svg');
 				background-size: 100% 100%;
 				
-				
 				&-content {
 					display: none;
 					position: absolute;
@@ -921,8 +920,8 @@
 				}
 				
 			}
-			
-			&:hover {
+		
+			&:hover{
 				.hint {
 					background-image: svg-load('../img/hint-bg.svg', fill=#169BF4);
 					
@@ -936,6 +935,7 @@
 		.i {
 			display: flex;
 			align-items: center;
+			margin-bottom: -1px;
 			
 			&::before {
 				content: '';
@@ -966,7 +966,6 @@
 			padding-left: 20rem;
 			padding-right: 20rem;
 			border-top: 1px solid #DFE6EE;
-			// border-bottom: 1px solid #DFE6EE;
 			
 			&:first-child {
 				height: 100rem;
