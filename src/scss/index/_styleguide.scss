@@ -296,15 +296,21 @@ form:hover {
 }
 
 .slider {
+	position: relative;
 	
-	.container.overflow {
-		position: relative;
-		overflow: visible;
-	}
+	// .container.overflow {
+	// 	position: relative;
+	// 	overflow: visible;
+	// }
 	
 	.slides {
+		display: flex;
 		flex-wrap: nowrap;
-		transition: .2s all;
+		// transition: .2s all;
+	}
+	
+	.slide {
+		flex-shrink: 0;
 	}
 	
 	.controls {
@@ -324,16 +330,19 @@ form:hover {
 			background-size: 100% 100%;
 			cursor: default;
 			
-			&.active {
+			&.active,
+			&[aria-disabled=false] {
 				background-image: svg-load('../img/slider-arrow-bg.svg', fill=rgb(22, 155, 244));
 				cursor: pointer;
 			}
 		}
 		.prev {
-			transform: translateX(50%);
+			// transform: translateX(50%);
+			transform: translateX(-50%);
 		}
 		.next {
-			transform: translateX(-50%) rotate(180deg);
+			// transform: translateX(-50%) rotate(180deg);
+			transform: translateX(50%) rotate(180deg);
 		}
 	}
 }
