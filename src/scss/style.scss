@@ -676,6 +676,23 @@
 						padding: 15rem 20rem 0;
 						@extend .t3;
 						
+						& { //safari mobile: font size fix
+							font-size: calc(14 * .7px);
+							
+							@media ($sm) {
+								font-size: calc(14 * .85px);
+							}
+							@media ($md) {
+								font-size: calc(14 * .9px);
+							}
+							@media ($lg) {
+								font-size: calc(14 * .95px);
+							}
+							@media ($xl) {
+								font-size: calc(14 * 1px);
+							}
+						}
+						
 						@media ($xl) {
 							height: 300rem;
 						}
@@ -687,10 +704,25 @@
 						b {
 							display: block;
 							color: $text-color;
-							font-size: 17rem;
-							line-height: 20rem;
-							font-weight: 700;
+							@extend h5;
 							margin-bottom: 16rem;
+							
+							& { //safari mobile: font size fix
+								font-size: calc(17 * .7px);
+								
+								@media ($sm) {
+									font-size: calc(17 * .85px);
+								}
+								@media ($md) {
+									font-size: calc(17 * .9px);
+								}
+								@media ($lg) {
+									font-size: calc(17 * .95px);
+								}
+								@media ($xl) {
+									font-size: calc(17 * 1px);
+								}
+							}
 						}
 						
 						.profit {
@@ -828,6 +860,23 @@
 					overflow: hidden;
 					@extend .hover;
 					
+					& { //safari mobile: font size fix
+						font-size: calc(17 * .7px);
+						
+						@media ($sm) {
+							font-size: calc(17 * .85px);
+						}
+						@media ($md) {
+							font-size: calc(17 * .9px);
+						}
+						@media ($lg) {
+							font-size: calc(17 * .95px);
+						}
+						@media ($xl) {
+							font-size: calc(17 * 1px);
+						}
+					}
+					
 					p {
 						margin-bottom: 1em;
 					}
@@ -849,6 +898,23 @@
 								@extend .t3;
 								font-weight: 700;
 								color: rgb(127, 144, 164);
+								
+								& { //safari mobile: font size fix
+									font-size: calc(14 * .7px);
+									
+									@media ($sm) {
+										font-size: calc(14 * .85px);
+									}
+									@media ($md) {
+										font-size: calc(14 * .9px);
+									}
+									@media ($lg) {
+										font-size: calc(14 * .95px);
+									}
+									@media ($xl) {
+										font-size: calc(14 * 1px);
+									}
+								}
 							}
 						}
 					}
@@ -858,6 +924,23 @@
 						justify-content: flex-end;
 						@extend .t3;
 						margin-top: auto;
+						
+						& { //safari mobile: font size fix
+							font-size: calc(14 * .7px);
+							
+							@media ($sm) {
+								font-size: calc(14 * .85px);
+							}
+							@media ($md) {
+								font-size: calc(14 * .9px);
+							}
+							@media ($lg) {
+								font-size: calc(14 * .95px);
+							}
+							@media ($xl) {
+								font-size: calc(14 * 1px);
+							}
+						}
 						
 						a {
 							display: inline;
