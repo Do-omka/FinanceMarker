@@ -300,46 +300,6 @@
 	}
 	
 	.join {
-		z-index: 0;
-		
-		// &.rocket-bg {
-		// 	@media ($lg) {
-		// 		position: relative;
-		// 		overflow: hidden;
-		// 		margin-bottom: -1px;
-		//
-		// 		&::before,
-		// 		&::after {
-		// 			content: '';
-		// 			position: absolute;
-		// 			bottom: 0;
-		// 			left: 0;
-		// 			right: 0;
-		// 			height: 225rem;
-		// 			background-size: 675rem 100% !important;
-		// 			z-index: -1;
-		// 			margin-left: -.5px;
-		// 			margin-right: -.5px;
-		// 		}
-		//
-		// 		&::before {
-		// 			right: 50%;
-		// 			background: url(../img/rocket-bg-left.png) no-repeat right bottom;
-		// 		}
-		// 		&::after {
-		// 			left: 50%;
-		// 			background: url(../img/rocket-bg-right.png) no-repeat left bottom;
-		// 		}
-		// 	}
-		// 	@media ($xl) {
-		// 		&::before,
-		// 		&::after {
-		// 			background-size: auto !important;
-		// 		}
-		// 	}
-		// }
-		//
-		
 		&.rocket-bg {
 			margin-bottom: -1px;
 			
@@ -555,7 +515,7 @@
 					position: absolute;
 					top: -61rem;
 					right: 0;
-					bottom: -35rem;
+					bottom: -135rem;
 					width: 45%;
 					background: url(../img/laptop.png) no-repeat right center;
 					background-size: contain;

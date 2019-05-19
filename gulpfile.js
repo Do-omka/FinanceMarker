@@ -46,7 +46,7 @@ function min_html() {
 function css() {
 	// sass.compiler = require('sass')
 	// let fibers = require("fibers")
-		
+	
 	return gulp.src('src/scss/*.scss')
 		.pipe(sourcemaps.init({
 			loadMaps: true,
@@ -111,7 +111,7 @@ function min_js() {
 }
 
 function min_img() {
-	return gulp.src('dev/img/!(*-bg.svg)', {since: gulp.lastRun(min_img)})
+	return gulp.src('dev/img/*', {since: gulp.lastRun(min_img)})
 		.pipe(newer('docs/img'))
 		.pipe(imgmin([
 			imgmin.gifsicle(),
