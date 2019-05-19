@@ -132,7 +132,11 @@ document.addEventListener('DOMContentLoaded', (e)=> {
 				575: {
 					slidesPerView: 1,
 				},
-			}
+			},
+			keyboard: {
+				enabled: true,
+				onlyInViewport: true,
+			},
 		})
 	}
 	
@@ -158,7 +162,11 @@ document.addEventListener('DOMContentLoaded', (e)=> {
 				575: {
 					slidesPerView: 1,
 				},
-			}
+			},
+			keyboard: {
+				enabled: true,
+				onlyInViewport: true,
+			},
 		})
 	}
 	
