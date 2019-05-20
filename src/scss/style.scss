@@ -931,6 +931,10 @@
 			&:first-child {
 				height: 100rem;
 			}
+			
+			:last-child {
+				margin-bottom: 0;
+			}
 		}
 		
 		.card-content {
