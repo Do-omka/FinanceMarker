@@ -31,6 +31,7 @@ $sm: 'min-width: 576px';
 	box-sizing: border-box;
 	-webkit-text-fill-color: currentColor; // safari: text color fix
 	-webkit-text-security: none; // webkit: password input placeholder fix
+	text-size-adjust: 100%; // safari mobile: font size fix
 }
 
 .unset {
@@ -39,6 +40,7 @@ $sm: 'min-width: 576px';
 	box-sizing: border-box;
 	-webkit-text-fill-color: currentColor; // safari: text color fix
 	-webkit-text-security: none; // webkit: password input placeholder fix
+	text-size-adjust: 100%; // safari mobile: font size fix
 }
 
 .dn {

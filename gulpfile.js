@@ -144,6 +144,11 @@ function watch_js() {
 function refresh() {
 	bs.init({
 		server: 'dev',
+		tunnel: true,
+		browser: "chrome",
+		ghostMode: {
+			scroll: false
+		}
 	})
 	bs.watch('dev').on('change', bs.reload)
 }
