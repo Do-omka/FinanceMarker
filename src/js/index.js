@@ -10,6 +10,8 @@
 
 document.addEventListener('DOMContentLoaded', (e)=> {
 	
+	document.addEventListener('touchstart', (e)=> {}, false)
+	
 	// if (document.querySelectorAll('.slider')) {
 	// 	let sliders = document.querySelectorAll('.slider')
 	// 	for (let i = 0; i < sliders.length; i++) {

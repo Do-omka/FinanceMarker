@@ -846,6 +846,8 @@
 		}
 		
 		.info {
+			// cursor: pointer;
+			
 			.hint {
 				position: relative;
 				width: 15rem;
@@ -879,10 +881,8 @@
 				}
 				
 			}
-			
-			cursor: pointer;
-			&:hover{
-				cursor: default;
+			&:hover,
+			&:active {
 				.hint {
 					background-image: svg-load('../img/hint-bg.svg', fill=#169BF4);
 					
