@@ -1,57 +1,57 @@
 .bg-ring {
 	
 	&-1 {
-		background: url(../img/ring.svg) no-repeat top 350rem right 28rem;
-		background-size: 500rem;
+		background: url(../img/ring.svg) no-repeat top calc(350 * var(--fs)) right calc(28 * var(--fs));
+		background-size: calc(500 * var(--fs));
 	}
 	
 	&-2 {
-		padding-top: 90rem;
-		background: url(../img/ring.svg) no-repeat top 715rem center,
+		padding-top: calc(90 * var(--fs));
+		background: url(../img/ring.svg) no-repeat top calc(715 * var(--fs)) center,
 		url('../img/bg.svg') no-repeat;
-		background-size: 500rem, 100% 800rem;
+		background-size: calc(500 * var(--fs)), 100% calc(800 * var(--fs));
 	}
 	
 	&-3 {
-		padding-bottom: 175rem;
-		background: url(../img/ring.svg) no-repeat bottom left -44rem;
-		background-size: 380rem;
-		margin-bottom: -75rem;
+		padding-bottom: calc(175 * var(--fs));
+		background: url(../img/ring.svg) no-repeat bottom left calc(-44 * var(--fs));
+		background-size: calc(380 * var(--fs));
+		margin-bottom: calc(-75 * var(--fs));
 		
 		@media ($xl) {
-			padding-bottom: 250rem;
+			padding-bottom: calc(250 * var(--fs));
 		}
 	}
 	
 	&-4 {
-		padding-bottom: 375rem;
-		background: url(../img/ring.svg) no-repeat bottom left -104rem;
-		background-size: 502rem;
-		margin-bottom: -275rem;
+		padding-bottom: calc(375 * var(--fs));
+		background: url(../img/ring.svg) no-repeat bottom left calc(-104 * var(--fs));
+		background-size: calc(502 * var(--fs));
+		margin-bottom: calc(-275 * var(--fs));
 	}
 	
 	&-5 {
-		padding-top: 50rem;
-		padding-bottom: 440rem;
-		background: url(../img/ring.svg) no-repeat bottom 50rem right -104rem,
+		padding-top: calc(50 * var(--fs));
+		padding-bottom: calc(440 * var(--fs));
+		background: url(../img/ring.svg) no-repeat bottom calc(50 * var(--fs)) right calc(-104 * var(--fs)),
 		url('../img/bg.svg') no-repeat;
-		background-size: 500rem, cover;
-		margin-bottom: -320rem;
+		background-size: calc(500 * var(--fs)), cover;
+		margin-bottom: calc(-320 * var(--fs));
 	}
 	
 	&-6 {
-		padding-bottom: 100rem;
-		background: url(../img/ring.svg) no-repeat bottom 10rem left -44rem;
-		background-size: 380rem;
+		padding-bottom: calc(100 * var(--fs));
+		background: url(../img/ring.svg) no-repeat bottom calc(10 * var(--fs)) left calc(-44 * var(--fs));
+		background-size: calc(380 * var(--fs));
 		
 		@media ($xl) {
-			padding-bottom: 170rem;
+			padding-bottom: calc(170 * var(--fs));
 		}
 	}
 	
 	&-7 {
-		padding-bottom: 170rem;
-		background: svg-load('bg-ring-7-bg.svg') no-repeat bottom left 44rem;
+		padding-bottom: calc(170 * var(--fs));
+		background: svg-load('bg-ring-7-bg.svg') no-repeat bottom left calc(44 * var(--fs));
 		background-size: 100%;
 	}
 }
